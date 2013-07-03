@@ -4,7 +4,7 @@ class Parser
 rule
   string
     : a_or_cs ttp
-    | ttp
+    | ttp         { puts "I found ttp" }
   # Add a recursive production to match "a" or "c"
   a_or_cs
     : a_or_cs a_or_c
